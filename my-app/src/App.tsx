@@ -1,18 +1,12 @@
-function App() {
-  const myName = "Loki";
-  const myAge = 24;
-  const myCity = "Jaipur";
-  const isOnline = true;
+import Greeting from "./Greeting";
 
+function App() {
   return (
-    <>
-      <h1 className="heading">My Profile</h1>
-      <p>Naam: {myName}</p>
-      <p>Age: {myAge}</p>
-      <p>City: {myCity}</p>
-      <p>{isOnline ? "Online hoon" : "Offline hoon"}</p>
-      
-    </>
+    <div>
+      <Greeting name="Loki"  city="Rajasthan" age={24} isStudent={true}  hobby="singing" />
+      <Greeting name="Arjun" city="Delhi"     age={21} isStudent={false} hobby="dancing" />
+      <Greeting name="Priya" city="Mumbai"    age={23}                   hobby="playing" />
+    </div>
   );
 }
 
