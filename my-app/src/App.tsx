@@ -1,7 +1,7 @@
 function App() {
   const myName = "Loki";
   const myAge = 24;
-  const myCity = "Rajasthan";
+  const myCity = "Jaipur";
   const isOnline = true;
 
   return (
